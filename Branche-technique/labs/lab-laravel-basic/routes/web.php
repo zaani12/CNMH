@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TasksController;
+use App\Http\Controllers\ProjectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [TasksController::class, 'index'])->name('home');
+Route::get('add.task', [TasksController::class, 'create'])->name('add.task');
+Route::post('add.task', [TasksController::class, 'store'])->name('add.task');
+
