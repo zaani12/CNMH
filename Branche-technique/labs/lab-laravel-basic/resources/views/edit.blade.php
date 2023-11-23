@@ -10,33 +10,39 @@
                                 <div class="card-header">
                                     <h3 class="card-title">Ajouet Member</h3>
                                 </div>
-                                <form>
+                               @if(@session('success'))
+                            <div style="margin-bottom:30px;">
+                                <span class="font-medium text-success">{{session('success')}}</span>
+                            </div>
+                            @endif
+                                <form method="POST" action="{{route('update.task' , ['id' => $task->id])}}">
+                                 @csrf
+                                 @method('patch')
+                                    <select name="projetId" id="projetId">
+                                        @foreach($projects as $project)
+                                            <option value="{{ $project->id }}" @if($project->id == $task->projetId) selected @endif>
+                                                {{ $project->nom }}
+                                            </option>
+                                        @endforeach
+                                    </select>
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Nom </label>
-                                            <input name="nom" type="text" class="form-control"
-                                                id="exampleInputEmail1" placeholder="Enter Nom">
+                                        <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" name="nom" value="{{$task->nom}}">
+            @error('nom')
+            <div>{{$message}}</div>
+            @enderror
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Prenom</label>
-                                            <input name="Prenom" type="text" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Enter Prenom">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Email</label>
-                                            <input name="startDate" type="email" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Enter Email">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input name="Password" type="password" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Enter Password">
+                                        <label  for="description" class="form-label">Description</label>
+            <textarea id="" cols="30" rows="3" class="form-control"  name="description">{{$task->description}}</textarea>
                                         </div>
 
                                     </div>
+                                    @error('nom')
+            <div>{{$message}}</div>
+            @enderror
 
                                     <div class="card-footer">
                                         <a href="./index.html" class="btn btn-default">Cancel</a>

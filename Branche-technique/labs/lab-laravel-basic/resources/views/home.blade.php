@@ -41,9 +41,10 @@
                             <thead>
                                 <tr>
                                     <th>Nom</th>
-                                    <th>description</th>
+                                    <th>description</th> 
+                                    <th>projet</th>
                                     <th scope="col">Action</th>
-
+                                    
                                 </tr>
                             </thead>
                             <tbody>
@@ -53,12 +54,14 @@
                                     <td>
                                     {{$task->description}}
                                     </td>
+                                    <td>
+                                    {{$task->description}}
+                                    </td>
 
                                     <td>
-                                        <a href="./edit.html" class="btn btn-sm btn-default"><i
-                                                class="fa-solid fa-pen-to-square"></i></a>
-                                        <button type="button" class="btn btn-sm btn-danger"><i
-                                                class="fa-solid fa-trash"></i></button>
+                                                <a href="{{route('edit.task' , ['id' => $task->id])}}" class="btn btn-sm btn-default"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="{{route('delete.task' , ['id' => $task->id])}}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+
                                     </td>
                                 </tr>
                                 @endforeach
