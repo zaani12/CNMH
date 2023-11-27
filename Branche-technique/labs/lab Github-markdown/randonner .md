@@ -64,6 +64,8 @@ Préparez-vous pour une aventure unique à travers le Désert Doré, où les dun
 
 Que vous choisissiez les montagnes, les ruisseaux, ou les déserts, chaque randonnée offre une aventure unique. Profitez de la nature, respectez l'environnement et partagez vos expériences avec d'autres passionnés de randonnée.
 
-Bonne exploration !
 
-![Randonnée](./image/groupe.jpg)
+
+![Randonnée](https://www.lex4you.ch/uploads/news_sub_article/image/331/large_01_Arbeiten.jpeg)
+
+ # ***Bonne exploration!***
