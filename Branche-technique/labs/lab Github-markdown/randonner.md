@@ -3,7 +3,7 @@
 ## Introduction
 
 Bienvenue dans notre livre de randonnée, où nous explorons des sentiers pittoresques et des paysages magnifiques. Que vous soyez un randonneur débutant ou expérimenté, ces itinéraires vous offriront une expérience inoubliable en pleine nature.
-![Randonnée Essentials](./image/download.jpg)
+![Randonnée Essentials](./image/image2.jpg)
 ## Chapitre 1: Les Essentiels de la Randonnée
 
 Avant de partir à l'aventure, assurez-vous d'avoir les essentiels de la randonnée. Voici une liste de ce que vous devriez emporter :
@@ -16,7 +16,7 @@ Avant de partir à l'aventure, assurez-vous d'avoir les essentiels de la randonn
 - Carte et boussole
 - Trousse de premiers soins
 
-![Randonnée Essentials](./image/image1.jpg)
+![Randonnée Essentials](./image/download.jpg)
 
 ## Chapitre 2: Sentier des Montagnes Majestueuses
 
