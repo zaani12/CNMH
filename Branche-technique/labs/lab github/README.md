@@ -1,6 +1,9 @@
-# lab-github <br>
+# lab-github
 
-### Tâche : Gestion des conflits Git
-### Description de la tâche : 
-Vous devez documenter les étapes pour gérer des conflits Git lors de la collaboration avec d'autres personnes sur le même référentiel (repo).
-[lien de dépôt](https://github.com/zaani12/Lab-Github)
+### Travaille à faire : 
+vous devait fait la Gestion des conflits Git
+### Critères de validation : 
+- créer deux branchs 
+- créer conflit entr les deux branchs 
+- Merge les deux Branches 
+- Résoudre le  conflit
