@@ -7,4 +7,5 @@ vous devait fait la Gestion des conflits Git
 - créer conflit entr les deux branchs 
 - Merge les deux Branches 
 - Résoudre le  conflit
-[Résolution d’un conflit de fusion sur GitHub](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+### Roussous :
+ [Résolution d’un conflit de fusion sur GitHub](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
