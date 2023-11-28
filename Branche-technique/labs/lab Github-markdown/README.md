@@ -1,6 +1,7 @@
 # GitHub-markdown
 
- ###  Tâche : Mise en forme d'un Livre de Randonnée  en Markdown
+ ###  Travaille à faire :
+ Mise en forme d'un Livre de Randonnée  en Markdown
 
 ###  Critères de validation :
  Vous devez formater un Livre de Randonnée en Markdown en utilisant divers éléments de mise en forme
