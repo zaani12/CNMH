@@ -21,4 +21,5 @@ Route::post('add.task', [TasksController::class, 'store'])->name('add.task');
 Route::get('edit/{id}' ,[TasksController::class, 'edit'])->name('edit.task');
 Route::patch('edit/{id}' ,[TasksController::class, 'update'])->name('update.task');
 Route::get('delete/{id}' ,[TasksController::class, 'destroy'])->name('delete.task');
+Route::Post('search',[TasksController::class,'index'])->name('search.task');
 

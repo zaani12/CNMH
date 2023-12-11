@@ -84,6 +84,7 @@
         <script src="../dist/js/pages/dashboard.js"></script>
         <script src="../dist/js/validationForm.js"></script>
         <!-- scripts -->
+       
     </body>
 
     </html>
