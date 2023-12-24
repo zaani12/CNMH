@@ -17,9 +17,8 @@ use App\Http\Controllers\ProjectController;
 
 Route::get('/', [TasksController::class, 'index'])->name('home');
 Route::get('add.task', [TasksController::class, 'create'])->name('add.task');
-Route::post('add.task', [TasksController::class, 'store'])->name('add.task');
+Route::post('add.task', [TasksController::class, 'store']);
 Route::get('edit/{id}' ,[TasksController::class, 'edit'])->name('edit.task');
 Route::patch('edit/{id}' ,[TasksController::class, 'update'])->name('update.task');
 Route::get('delete/{id}' ,[TasksController::class, 'destroy'])->name('delete.task');
-Route::Post('search',[TasksController::class,'index'])->name('search.task');
-
+Route::get('/{project}/search', [TaskController::class, 'searchTask'])->name("search.task");

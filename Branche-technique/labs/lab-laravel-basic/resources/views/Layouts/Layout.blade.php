@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Maquette Prototype</title>
+        <title>lab crud basic </title>
         <!-- head -->
         <!-- Google Font: Source Sans Pro -->
         <link rel="stylesheet"
@@ -85,6 +85,52 @@
         <script src="../dist/js/validationForm.js"></script>
         <!-- scripts -->
        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<script>
+    function submitForm() {
+        document.getElementById("importForm").submit();
+    }
+
+    function updateUrl() {
+        var selectedProjectId = document.getElementById('project').value;
+        var url = '{{ url('tache') }}/' + selectedProjectId;
+        window.location.href = url;
+    }
+</script>
+
+<script>
+    $(document).ready(function() {
+        $(document).on('keyup', '#searchTask', function(e) {
+            e.preventDefault();
+            let project = document.getElementById('project').value;
+            let search = $(this).val();
+            console.log(search);
+            // let page = $('.pagination').find('.active').text(); // Get the current active page
+            $.ajax({
+                url: '{{ route('search.task', ['project' => ':project']) }}'.replace(':project',
+                    project),
+                method: 'GET',
+                data: {
+                    search: search,
+                    project: project,
+                },
+                success: function(data) {
+                    $('.table-tasks').html(data.table);
+                    $('.pagination').html(data.pagination);
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
     </body>
 
     </html>

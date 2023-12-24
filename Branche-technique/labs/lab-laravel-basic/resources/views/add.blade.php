@@ -16,10 +16,10 @@
                                         </div>
                                         @endif
 
-                                <form method = "POST" acttion="">
+                                <form method = "POST" action="">
                                 @csrf
                                     <div class="card-body">
-                                    <div class="mb-3">
+                                    <div class="mb-4">
                                     <label  for="description" class="form-label">Description</label>
                                             <select name="projetId" id="">
                                                 @foreach($projects as $project)
@@ -38,12 +38,12 @@
                                                 <label  for="description" class="form-label">Description</label>
                                                 <textarea id="" cols="30" rows="3" class="form-control"  name="description"></textarea>
                                             </div>
-                                            @error('nom')
+                                            @error('description')
                                                 <div>{{$message}}</div>
                                                 @enderror
                                     </div>
                                     <div class="card-footer">
-                                        <a href="./index.html" class="btn btn-default">Cancel</a>
+                                        <a href="{{route('home')}}" class="btn btn-default">Cancel</a>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                                 </form>

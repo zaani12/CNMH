@@ -10,7 +10,7 @@
          <!-- aside -->
          <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="#" class="brand-link">
+            <a href="{{route('home')}}" class="brand-link">
                 <img src="../dist/img/solicoders-logo.png" class="brand-image img-circle elevation-3" alt="Group Image">
                 <span class="brand-text font-weight-light text-center">Solicoders</span>
             </a>
@@ -31,10 +31,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link ">
+                            <a href="{{route('home')}}" class="nav-link ">
                                 <i class="fa-solid fa-users pl-1 pr-1"></i>
                                 <p>
-                                    Members
+                                    task
                                 </p>
                             </a>
                         </li>
